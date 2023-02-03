@@ -344,13 +344,109 @@ url("vendor/font-face/Inter-Black.woff2");
 
 
 
+.place__container {
+    margin: 0 auto;
+}
+
+
 .place{
-    font-family: 'Inter', Arial, sans-serif;
+    font-family: 'Inter', sans-serif;
     display: grid;
+    max-width: calc(100% - 148px * 2);
     grid-template-columns:  minmax(460px, 1fr) minmax(min-content, max-content);
     grid-template-rows: minmax(min-content, max-content) minmax(460px, 1fr);
-    max-width: calc(100% - 148px * 2);
     margin: 80px auto 0;
-    row-gap: 48px;
-    column-gap: 40px;
+    gap: 48px 40px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1100px) {
+    .place {
+        max-width: calc(100% - 48px * 2);
+        grid-template-columns:  minmax(440px, 1fr) minmax(min-content, max-content);
+        grid-template-rows: minmax(min-content, max-content) minmax(440px, 1fr);
+        column-gap: 32px;
+    }
+}
+@media screen and (min-width: 320px) and (max-width: 768px){
+
+   .place {
+       margin-top: 88px;
+       max-width: calc(100% - 24px * 2);
+       grid-template-columns: minmax(340px, 1fr) minmax(min-content, max-content);
+       grid-template-rows: minmax(min-content, max-content) minmax(340px, 1fr);
+       column-gap: 28px;
+
+   }
+}
+@media screen and (max-width: 320px) {
+    .place {
+        margin-top: 64px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}
+.place:first-of-type{
+    margin-top: 92px;
+}
+
+.place__title{
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
+    font-size: 72px;
+    line-height: 1.06;
+    margin: 0;
+    padding: 0;
+    grid-row: 1;
+}
+
+.place__image {
+    max-width: 100%;
+    grid-row: 2;
+}
+.place__website{
+    display: grid;
+    flex-direction: column;
+    align-self: end;
+    grid-row: 1;
+    max-width: 100%;
+}
+
+.place__url {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.7;
+    letter-spacing: 0.125rem;
+    padding: 0;
+    margin: 0 0 12px 0;
+    opacity: 0.6;
+}
+
+.place__link {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.22;
+    padding: 0;
+    margin: 0;
+    color: #fff;
+    text-decoration: underline;
+}
+
+.place__link_hover:hover {
+    cursor: url("./images/cursor/cursor.png"), pointer;
+}
+
+.place__paragraph{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.6;
+    padding: 0;
+    margin: 26px 0 0 0;
+    grid-row: 2;
+}
+
+.place__paragraph:first-of-type{
+    margin: 0;
 }
