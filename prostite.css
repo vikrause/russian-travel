@@ -30,6 +30,12 @@ url("vendor/font-face/Inter-Black.woff2");
     background-color: #2A2C2F;
     font-family: 'Inter', sans-serif;
     color: #fff;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    text-rendering: optimizeLegibility;
 }
 
 
@@ -98,15 +104,6 @@ url("vendor/font-face/Inter-Black.woff2");
 
 
 
-/*.content__size_medium {*/
-/*    max-width: 984px;*/
-/*    margin: 0 auto;*/
-/*}*/
-/*@media screen and (max-width: 1024px) and (min-width: 768px) {*/
-/*    .content__size_medium {*/
-/*        max-width: 928px;*/
-/*    }*/
-/*}*/
 
 /******************************************************************************/
 
@@ -118,12 +115,14 @@ url("vendor/font-face/Inter-Black.woff2");
     display: flex;
     flex-direction: column;
 }
+
 @media screen and (max-width: 1024px) and (min-width: 768px) {
     .lead {
         padding-top: 48px;
         max-width: 928px;
     }
 }
+
 @media screen and (max-width: 320px) {
     .lead {
         padding-top: 48px;
@@ -139,25 +138,27 @@ url("vendor/font-face/Inter-Black.woff2");
     padding: 0;
     line-height: 1.04;
 }
+
 @media screen and (max-width: 700px) and (min-width: 490px) {
     .lead__title {
         font-size: 69px;
         line-height: 1.1;
     }
 }
+
 @media screen and (max-width: 510px) and (min-width: 350px) {
     .lead__title {
         font-size: 48px;
         line-height: 1.1;
     }
 }
+
 @media screen and (max-width: 350px) {
     .lead__title {
         font-size: 40px;
         line-height: 1.1;
     }
 }
-
 
 
 .lead__subtitle {
@@ -235,7 +236,8 @@ url("vendor/font-face/Inter-Black.woff2");
         margin-left: 48px;
     }
 }
-@media screen and  (min-width: 350px) and (max-width: 768px){
+
+@media screen and  (min-width: 350px) and (max-width: 768px) {
     .intro {
         margin-top: 88px;
         margin-left: 24px;
@@ -245,7 +247,7 @@ url("vendor/font-face/Inter-Black.woff2");
 @media screen and (max-width: 350px) {
     .intro {
         max-width: 288px;
-       margin-top: 64px;
+        margin-top: 64px;
         margin-left: 16px;
     }
 }
@@ -260,13 +262,15 @@ url("vendor/font-face/Inter-Black.woff2");
     margin: 0 0 40px 0;
     padding: 0;
 }
+
 @media screen and (max-width: 510px) and (min-width: 350px) {
     .intro__title {
         font-size: 40px;
         line-height: 1.1;
     }
 }
-@media screen and (max-width: 350px){
+
+@media screen and (max-width: 350px) {
     .intro__title {
         font-size: 32px;
         line-height: 1.09;
@@ -283,7 +287,8 @@ url("vendor/font-face/Inter-Black.woff2");
     padding: 0;
     max-width: 690px;
 }
-@media screen and (max-width: 760px){
+
+@media screen and (max-width: 760px) {
     .intro__text {
         max-width: 720px;
     }
@@ -304,17 +309,14 @@ url("vendor/font-face/Inter-Black.woff2");
     line-height: 1.5;
 
 }
+
 .intro__list_item-accent {
     font-family: 'Inter', sans-serif;
     font-weight: 300;
 }
 
 
-
-
 /***********************************************************/
-
-
 
 
 .photo-grid {
@@ -326,12 +328,14 @@ url("vendor/font-face/Inter-Black.woff2");
     grid-template-rows: repeat(auto-fit, minmax(213px, 1fr));
     gap: 16px;
 }
-@media screen and (min-width: 320px) and (max-width: 768px){
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
     .photo-grid {
         max-width: calc(100% - 24px * 2);
         margin-top: 88px;
     }
 }
+
 @media screen and (max-width: 320px) {
     .photo-grid {
         max-width: calc(100% - 16px * 2);
@@ -346,42 +350,39 @@ url("vendor/font-face/Inter-Black.woff2");
 }
 
 
-
-
-
 /***********************************************************/
-
-
-
 
 
 .place__container {
     display: grid;
     grid-template-rows: repeat(5, auto);
     row-gap: 80px;
-    padding: 92px 0 92px;
     margin: 0 auto;
 }
+
 @media screen and (max-width: 520px) {
     .place__container {
-        grid-template-rows: repeat(5, auto);
         row-gap: 50px;
         padding: 64px 0 64px;
     }
 }
 
-.place{
+.place {
     font-family: 'Inter', sans-serif;
     display: grid;
     max-width: calc(100% - 148px * 2);
     grid-template-columns: 460px auto;
-    grid-template-rows: repeat(2, auto);
-    margin: 80px auto 0;
+    margin: 0 auto ;
     gap: 48px 40px;
+    grid-template-areas:
+    "title website"
+    "image description";
 }
-.place:first-of-type{
+
+.place:first-of-type {
     margin-top: 92px;
 }
+
 @media screen and (min-width: 768px) and (max-width: 1100px) {
     .place {
         max-width: calc(100% - 48px * 2);
@@ -389,64 +390,80 @@ url("vendor/font-face/Inter-Black.woff2");
         column-gap: 32px;
     }
 }
-@media screen and (min-width: 520px) and (max-width: 768px){
-   .place {
-       margin: 76px auto 0;
-       max-width: calc(100% - 24px * 2);
-       grid-template-columns: 340px auto;
-       column-gap: 28px;
 
-   }
+@media screen and (min-width: 520px) and (max-width: 768px) {
+    .place {
+        margin: 76px auto 0;
+        max-width: calc(100% - 24px * 2);
+        grid-template-columns: 340px auto;
+        column-gap: 28px;
+
+    }
 }
 
-@media screen and (max-width: 520px) {
+@media screen and (max-width: 615px) {
     .place {
         grid-template-columns: 1fr;
-        column-gap: 0;
-        row-gap: 32px;
-        margin: 0 0 50px;
+        grid-template-areas:
+          'title'
+          'website'
+          'image'
+          'description';
+        gap: 32px 0;
+        margin: 0;
+        max-width: 615px;
     }
 }
 
 
-.place__title{
+.place__title {
+    grid-area: title;
+    align-self: end;
     font-family: 'Inter', sans-serif;
     font-weight: 900;
     font-size: 72px;
     line-height: 1.06;
     margin: 0;
     padding: 0;
-    grid-row: 1;
 }
-@media screen and (min-width: 320px) and (max-width: 768px){
+
+@media screen and (min-width: 520px) and (max-width: 768px) {
     .place__title {
         font-size: 42px;
         line-height: 1.09;
         padding-right: 11px;
     }
 }
-@media screen and (max-width: 320px) {
+
+@media screen and (max-width: 520px) {
     .place__title {
         font-size: 32px;
         line-height: 1.09;
+        margin: 0 16px 0;
     }
 }
 
 .place__image {
+    grid-area: image;
     max-width: 100%;
     object-fit: cover;
 }
+/*@media screen and (min-width: 320px) and (max-width: 520px) {*/
+/*    .place__image {*/
+/*        width: 520px;*/
+/*    }*/
 
-.place__website{
-    display: grid;
+/*}*/
+
+.place__website {
+    grid-area: website;
     align-self: end;
-    grid-row: 1;
-    max-width: 100%;
 }
-@media screen and (min-width: 320px) and (max-width: 560px){
+
+@media screen and (max-width: 615px) {
     .place__website {
-        width: 90%;
-        margin: 0 auto;
+        width: 100%;
+        margin: 0 16px 0;
     }
 
 }
@@ -460,7 +477,8 @@ url("vendor/font-face/Inter-Black.woff2");
     padding: 0;
     opacity: 0.6;
 }
-@media screen and (min-width: 320px) and (max-width: 768px){
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
     .place__url {
         line-height: 1;
     }
@@ -481,16 +499,25 @@ url("vendor/font-face/Inter-Black.woff2");
     cursor: url("./images/cursor/cursor.png"), pointer;
 }
 
+.place__description {
+    grid-area: description;
+    margin:0 0 16px 0;
+}
+
+
 .place__paragraph {
     font-weight: 400;
     font-size: 18px;
     line-height: 1.6;
     padding: 0;
     margin: 26px 0 0 0;
-    grid-row: 2;
 }
 
-@media screen and (min-width: 320px) and (max-width: 768px){
+.place__paragraph:first-of-type {
+    margin: 0;
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
     .place__paragraph {
         font-size: 16px;
         margin-top: 25px;
@@ -499,6 +526,3 @@ url("vendor/font-face/Inter-Black.woff2");
 
 }
 
-.place__paragraph:first-of-type{
-    margin: 0;
-}
