@@ -1,23 +1,24 @@
-# Проект: Путешествие по России
 
-### Обзор
-* Интро
-* Figma
-* Картинки
+# Project: Journey through Russia
 
-**Интро**
 
-Здесь будет проект о путешествии по России.
-В Фигме мы разместили макет, в котором видно, как проект должен выглядеть на самых распространённых разрешениях экранов.
-Этот проект сложнее предыдущих, постарайтесь уделить ему больше времени.
 
-**Figma**
 
-* [Ссылка на макет в Figma](https://www.figma.com/file/5S2WSbEFL6awjVWJ0NWL8Q/Sprint-3_-Russia-_-desktop-mobile?node-id=28503%3A0)
+## _The educational project of the Yandex Workshop "Journey through Russia" was completed [by me](https://github.com/vikrause) to consolidate the theory._
 
-**Картинки**
 
-Доставать картинки предстоит из Фигмы. Это расхожая практика, поэтому полезно потренироваться.
-Не забудьте [оптимизировать картинки](https://tinypng.com/), чтобы ваш сайт загружался быстрее.
 
-Удачи!
+### This project uses technologies such as:
+* ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+* ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+* `Nested`
+* `Flexbox`
+* `Grid-Layout`
+
+
+### The project was made from this layout:
+* [![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white)](https://www.figma.com/file/5S2WSbEFL6awjVWJ0NWL8Q/Sprint-3_-Russia-_-desktop-%2B-mobile?node-id=62863%3A870&t=TMtsu61FVpIFgbva-0)
+
+
+Project link:
+* [![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://vikrause.github.io/russian-travel/)
