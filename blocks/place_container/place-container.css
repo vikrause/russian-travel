@@ -1,0 +1,22 @@
+.place-container {
+    display: grid;
+    grid-template-rows: repeat(5, auto);
+    row-gap: 80px;
+    margin: 0 auto;
+    padding-top: 92px;
+}
+
+@media screen and (max-width: 768px) {
+    .place-container {
+        row-gap: 72px;
+        padding-top: 88px;
+    }
+}
+
+@media screen and (max-width: 624px) {
+    .place-container {
+        grid-template-rows: repeat(5, auto);
+        row-gap: 50px;
+        padding-top: 64px;
+    }
+}

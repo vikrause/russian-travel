@@ -1,0 +1,8 @@
+.place__image {
+    grid-area: image;
+    max-width: 100%;
+    object-fit: cover;
+    padding: 0;
+    margin: 0;
+    display: block;
+}
