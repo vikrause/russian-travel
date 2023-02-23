@@ -3,4 +3,9 @@
     color: #fff;
     display: flex;
     cursor: url("../../images/cursor/cursor.png"), pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.link:hover {
+    opacity: 0.8;
 }
